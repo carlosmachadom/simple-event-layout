@@ -100,7 +100,7 @@ ul > li > a
 
 #carousel .overlay
 {
-    height: inherit;
+    height: 100%;
     z-index: 20;
     position: absolute;
     top: 0;
