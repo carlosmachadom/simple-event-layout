@@ -1,0 +1,213 @@
+:root
+{
+    --short-font-size: 1.2rem;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body
+{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+ul > li 
+{
+    list-style: none
+}
+
+ul > li > a
+{
+    text-decoration: none;
+}
+
+
+/* Here starts the header */
+.header
+{
+    padding: 1rem 0;
+    background-color: #212529;
+}
+
+.platzi-color
+{
+    color: #97c93e !important;
+}
+
+.header .container-xs
+{
+    margin-bottom: 0;
+}
+
+.header .container-xs .navbar-brand
+{
+    margin-right: .5rem;
+}
+
+.header .container-xs .navbar-brand img
+{
+    width: 100%;
+    max-width: 120px;
+    max-height: 70vh;
+}
+
+.header .container-xs figcaption
+{
+    display: inline-block;
+    color: white;
+}
+/* Here ends the header */
+
+/* Here starts the main */
+.hero-section
+{
+    padding: 0;
+    
+}
+
+.hero-section .carousel-inner
+{
+    height: 100%;
+}
+
+.hero-section .carousel-inner figure
+{
+    height: 100%;
+    display: block;
+    margin-bottom: 0;
+}
+
+.hero-section .carousel-inner figure > img
+{    
+    height: 100%;
+    max-height: 70vh;
+    display: inline-block;
+    object-fit: contain;
+    filter: grayscale(50%);
+}
+
+.hero-section #carousel
+{
+    position: relative;
+    height: fit-content;
+}
+
+#carousel .overlay
+{
+    height: inherit;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+.overlay .container
+{
+    height: 100%;
+}
+
+.overlay .container div
+{
+    height: 100%;
+}
+
+.overlay .container div article > a
+{
+    margin: 0 .4rem;
+}
+
+.btn-platzi
+{
+    background-color: #97c93e !important;
+}
+
+.btn-platzi:hover
+{
+    background-color: #79a132 !important;
+}
+
+#carousel > div
+{
+    max-height: 70vh !important;
+}
+
+.main .date-section
+{
+    background-color: #212529;
+}
+
+.main .date-section img
+{
+    width: 100%;
+}
+
+.main .date-section article
+{
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .date-section article > a
+{
+    max-width: 150px;
+}
+
+/* Here ends the main */
+
+/* Here starts footer */
+.footer
+{
+    background-color: #0c1633;
+}
+
+.menu-container__list
+{
+    padding-left: 0;
+}
+
+.menu-container__list li > a
+{
+    color: white;
+}
+
+.menu-container__list li > a:hover
+{
+    text-decoration: underline;
+}
+
+
+/* Here ends the footer */
+
+
+/* Here starts media queries */
+@media (min-width: 337px) {
+   .hero-section .overlay div div article > a
+   {
+       margin-bottom: 0 !important;
+   }
+}
+
+@media (min-width: 760px) {
+    .hero-section .carousel-inner figure > img
+    {    
+        object-fit: cover;
+    }
+
+    .overlay .container div article > a:nth-child(2)
+    {
+        margin-right: 0 0 0 .4rem;
+    }
+}
